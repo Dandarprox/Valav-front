@@ -1,0 +1,17 @@
+@import './_variables.scss';
+
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title--main-pos {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+}
+
+.title__space {
+  margin-top: 120px;
+}

@@ -1,0 +1,64 @@
+.start__content {
+  margin: 0 30px;
+}
+
+.status-card {
+  height: 153px;
+  background: $colorBlue;
+  color: white;
+  border-radius: 13px;
+  margin: 10px 0;
+  position: relative;
+  padding: 10px 15px;
+}
+
+
+.status-card__message {
+  display: inline-block;
+  border-radius: 30px;
+  border: 1px solid white;
+  padding: 5px 20px;
+  text-align: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.status-card__message--s {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.status-card__message--solid {
+  position: absolute;
+  background: white;
+  color: $colorBlue;
+  right: 15px;
+  bottom: 10px;
+}
+
+.status-card__points {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.status-card__points--s {
+  font-size: 30px;
+  text-align: right;
+}
+
+.status-card__division {
+  display: flex;
+  height: calc(100% - 27px);
+}
+
+.status-card__column {
+  flex: 1 0;
+  text-align: center;
+  padding: 0 10px;
+
+  &:first-child {
+    padding-right: 16 px;
+    border-right: 1px solid rgba($color: white, $alpha: 0.8);
+  }
+}

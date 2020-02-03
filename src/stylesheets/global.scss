@@ -1,0 +1,41 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_buttons.scss';
+@import './_titles.scss';
+@import './_util.scss';
+@import './_card.scss';
+@import './_transitions.scss';
+
+.logo {
+  @include squared(205px);
+  position: absolute;
+  
+  img {
+    @include squared(100%);
+    object-fit: cover;
+  }
+}
+
+.main-image {
+  height: 50vh;
+  min-height: 430px;  
+}
+
+.content {
+  margin: 0 43px;
+}
+
+.menu__spacer {
+  padding-bottom: calc(65px + 50px);
+}
+
+.hlp__flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.hlp__pos-rel {
+  position: relative;
+}

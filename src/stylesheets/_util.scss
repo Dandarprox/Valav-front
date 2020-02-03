@@ -1,0 +1,14 @@
+.utl__align-x {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.utl__abs-align-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.utl__block {
+  display: block;
+}

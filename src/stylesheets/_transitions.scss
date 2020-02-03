@@ -1,0 +1,16 @@
+.trfade-enter-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.trfade-enter, .trfade-leave-to
+/* .trfade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.trlist-enter-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.trlist-enter, .trlist-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}

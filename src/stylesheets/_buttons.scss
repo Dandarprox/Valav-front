@@ -1,0 +1,78 @@
+@import './_variables.scss';
+
+.btn {
+  display: inline-block;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 8px 17px;
+  text-align: center;
+  transition: 0.3s;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px 0px rgba(black, 0.3);
+  min-width: 200px;
+  border: 2px solid transparent;
+}
+
+.btn--s {
+  min-width: 130px;
+  margin: 10px 0;
+  padding: 5px 13px;
+  font-size: 15px;
+}
+
+.btn--solid {
+  color: white;
+  background-color: $colorBlue;
+
+  &:not(.btn__back) {
+    &:hover {
+      background-color: lighten($color: $colorBlue, $amount: 7%);
+    }
+  }
+}
+
+.btn--outline {
+  color: $colorBlue;
+  border: 2px solid $colorBlue;
+
+  &:hover {
+    background-color: rgba(white, 0.07);
+  }
+}
+
+.btn__container--vertical {
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.btn__container--horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__container--horizontal,
+.btn__container--vertical {
+  margin: 5px 0;
+}
+
+// Back
+.btn__back {
+  @extend .btn--outline;
+  @extend .btn;
+  min-width: auto;
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  padding: 5px 15px;
+  margin: 0;
+  z-index: 1;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    @include squared(18px);
+    margin-right: 3px;
+  }
+}

@@ -1,0 +1,22 @@
+@mixin squared($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin circular($size) {
+  @include squared($size);
+  border-radius: 50%;
+}
+
+@mixin flexCentered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%absoluteCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
