@@ -68,7 +68,7 @@ $product-padding: 12px;
   color: white;
   font-size: 12px;
   position: absolute;
-  bottom: calc($product-padding + 2px);
+  bottom: calc(#{$product-padding} + 2px);
   left: 50%;
   transform: translateX(-50%);
 }
