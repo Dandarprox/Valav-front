@@ -69,6 +69,10 @@ export default class ProviderHistory extends titleMixin {
     this.psMounted();
   }
 
+  filterDate() {
+    
+  }
+
   filterPoints() {
     this.filter = 'points';
 

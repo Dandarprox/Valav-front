@@ -2,7 +2,7 @@
   <div>
     <transition-group tag="div" name="trlist">
       <div
-        v-for="(item, index) in list"
+        v-for="(item) in list"
         :key="item.index" 
         class="history-item">
         <div class="history-item__name">{{ item.name }}</div>

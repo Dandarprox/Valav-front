@@ -80,7 +80,7 @@ export default class Login extends titleMixin {
       (this.$refs.modal as Modal).show();
     } else {
       // Successful login
-      this.$router.push({name: 'member-home'})
+      this.$router.push({name: `${this.loginRol}-home`});
     }
   }
 
