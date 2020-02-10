@@ -16,7 +16,6 @@
     "@types/gsap": "^1.20.2",
     "@types/lodash": "^4.14.149",
     "core-js": "^2.6.5",
-    "cypress": "^3.6.1",
     "express": "^4.17.1",
     "googlemaps": "^1.12.0",
     "gsap": "^3.0.0",
