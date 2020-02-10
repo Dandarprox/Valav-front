@@ -32,14 +32,14 @@ import { titleMixin } from '../../../mixins/title';
 })
 export default class Products extends titleMixin {
   list = [
-    { name: 'Julián', points: 19, state: 'received' },
-    { name: 'Julián', points: 13, state: 'given' },
-    { name: 'Julián', points: 14, state: 'received' },
-    { name: 'Julián', points: 15, state: 'given' },
-    { name: 'Julián', points: 16, state: 'received' },
-    { name: 'Julián', points: 17, state: 'given' },
-    { name: 'Julián', points: 18, state: 'received' },
-    { name: 'Julián', points: 19, state: 'given' },
+    { name: 'Cuadernos', points: 19, state: 'received' },
+    { name: 'Cuadernos', points: 13, state: 'given' },
+    { name: 'Cuadernos', points: 14, state: 'received' },
+    { name: 'Cuadernos', points: 15, state: 'given' },
+    { name: 'Cuadernos', points: 16, state: 'received' },
+    { name: 'Cuadernos', points: 17, state: 'given' },
+    { name: 'Cuadernos', points: 18, state: 'received' },
+    { name: 'Cuadernos', points: 19, state: 'given' },
   ]
 }
 </script>
