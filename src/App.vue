@@ -7,8 +7,6 @@
 
     <div class="title title__view">{{ getMainTitle }}</div>
     <router-view></router-view>
-
-    
   </div>
 </template>
 

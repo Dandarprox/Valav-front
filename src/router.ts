@@ -19,6 +19,10 @@ import ProviderCatalog from '@/views/Provider/Catalog.vue';
 import ProviderHistory from '@/views/Provider/History.vue';
 import ProviderMap from '@/views/Provider/Map.vue';
 
+// Provider Catalog
+import CatalogProducts from './views/Provider/CatalogOptions/Products.vue';
+import CatalogPromotions from './views/Provider/CatalogOptions/Promotions.vue';
+
 
 Vue.use(Router)
 
@@ -81,7 +85,19 @@ export default new Router({
         {
           path: '/provider-catalog',
           name: 'provider-catalog',
-          component: ProviderCatalog
+          component: ProviderCatalog,
+          children: [
+            {
+              name: 'provider-catalog-product',
+              path: 'products',
+              component: CatalogProducts
+            },
+            {
+              name: 'provider-catalog-promo',
+              path: 'promotions',
+              component: CatalogPromotions
+            }
+          ]
         },
         {
           path: '/provider-history',

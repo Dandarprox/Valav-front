@@ -29,7 +29,7 @@ export default class ProviderIndex extends Vue {
   menu = [
     { title: 'Inicio', iconUrl: 'person.svg', path: 'provider-home'},
     { title: 'Verificación', iconUrl: 'check.svg', path: 'provider-validate'},
-    { title: 'Catálogo', iconUrl: 'catalog.svg', path: 'provider-catalog'},
+    { title: 'Catálogo', iconUrl: 'catalog.svg', path: 'provider-catalog-product'},
     { title: 'Historial', iconUrl: 'history.svg', path: 'provider-history'},
     { title: 'Mapa', iconUrl: 'map.svg', path: 'provider-map'},
   ]

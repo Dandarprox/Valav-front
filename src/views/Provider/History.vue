@@ -3,8 +3,14 @@
     <div class="content">
       Filtrar
       <div class="btn__container--horizontal">
-        <div class="btn btn--s btn--outline" @click="filterDate">Por fecha</div>
-        <div class="btn btn--s btn--outline" @click="filterPoints">Por puntos</div>
+        <FilterButton
+          name="Por fecha"
+          @order="filterDate"
+        />
+        <FilterButton
+          name="Por puntos"
+          @order="filterPoints"
+        />
       </div>
 
       <history-list
@@ -36,23 +42,25 @@ import { historyList, Modal } from '../../types/general';
 
 import HistoryList from '../../components/shared/HistoryList.vue';
 import CustomModal from '../../components/ui/Modal.vue';
+import FilterButton from '../../components/ui/FilterButton.vue';
 
 @Component({
   components: {
     HistoryList,
-    CustomModal
+    CustomModal,
+    FilterButton,
   }
 })
 export default class ProviderHistory extends titleMixin {
   list: historyList[] = [
-    { name: 'Julián', points: 12, state: 'received' },
-    { name: 'Julián', points: 12, state: 'given' },
-    { name: 'Julián', points: 12, state: 'received' },
-    { name: 'Julián', points: 12, state: 'given' },
-    { name: 'Julián', points: 12, state: 'received' },
-    { name: 'Julián', points: 12, state: 'given' },
-    { name: 'Julián', points: 12, state: 'received' },
-    { name: 'Julián', points: 12, state: 'given' },
+    { name: 'Julián', points: 19, state: 'received' },
+    { name: 'Julián', points: 13, state: 'given' },
+    { name: 'Julián', points: 14, state: 'received' },
+    { name: 'Julián', points: 15, state: 'given' },
+    { name: 'Julián', points: 16, state: 'received' },
+    { name: 'Julián', points: 17, state: 'given' },
+    { name: 'Julián', points: 18, state: 'received' },
+    { name: 'Julián', points: 19, state: 'given' },
   ];
   filter = 'date';
 
@@ -73,10 +81,8 @@ export default class ProviderHistory extends titleMixin {
     
   }
 
-  filterPoints() {
-    this.filter = 'points';
-
-    (this.$refs.modal as Modal).show(); 
+  filterPoints(direction: boolean) {
+    this.list = Object.assign([], this.list.sort((a: historyList, b: historyList) => direction ? a.points - b.points : b.points - a.points));
   }
 }
 </script>
